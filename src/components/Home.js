@@ -247,12 +247,20 @@ export const Home = (props) => {
                   <div className="row">
                       <div className="col-6">
                           
-                          <input className="form-control" name="name" type="text" placeholder="Your Name" aria-label="Enter Full Name" />
+                          <input className="form-control" 
+                                name="name"
+                                value={mailInput.name}
+                                onChange={handleInput}
+                                type="text" placeholder="Your Name" aria-label="Enter Full Name" />
                       </div>
 
                       <div className="col-6">
                           
-                          <input className="form-control" name="organization_name" type="text" placeholder="Organization Name" aria-label="Organization Name" />
+                          <input className="form-control" 
+                            name="organization_name"
+                            value={mailInput.organization_name}
+                            onChange={handleInput}
+                            type="text" placeholder="Organization Name" aria-label="Organization Name" />
                       </div>
 
                       
@@ -260,14 +268,26 @@ export const Home = (props) => {
 
                   <div className="row">
 
-                        <div className="col-6  mt-4"><input className="form-control" name="mobile" type="text" placeholder="Phone Number" aria-label="Enter Mobile Number" /></div>
+                        <div className="col-6  mt-4"><input className="form-control" 
+                                name="mobile" 
+                                value={mailInput.mobile}
+                                onChange={handleInput}
+                                type="text" placeholder="Phone Number" aria-label="Enter Mobile Number" /></div>
 
-                      <div className="col-6 mt-4"><input className="form-control" name="email" type="text" placeholder="Email" aria-label="Enter Email" /></div>
+                      <div className="col-6 mt-4"><input className="form-control" 
+                            name="email"
+                            value={mailInput.email}
+                            onChange={handleInput} 
+                            type="email" placeholder="Email" aria-label="Enter Email" /></div>
                     </div>
 
                 <div className="row">
                       <div className="col-6 mt-4">
-                        <textarea className="form-control" rows="4" type="text" name="message" placeholder="Message" aria-label="Enter Message"></textarea>
+                        <textarea className="form-control" rows="4" type="text" 
+                            name="message" 
+                            value={mailInput.message}
+                            onChange={handleInput}
+                            placeholder="Message" aria-label="Enter Message"></textarea>
                         </div>
 
                       <div className="col-6 mt-4"><button className="btn btn-warning btn-block" type="submit">Submit</button></div>
