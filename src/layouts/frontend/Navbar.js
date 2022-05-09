@@ -16,7 +16,7 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav fs-0 fw-700">
                 <li>
-                    <a href='http://localhost:3000'>Home</a>
+                    <a href='https://teksolcorporation.com/'>Home</a>
                 </li>
                 <li>
                     <Link to="/about">About</Link>
