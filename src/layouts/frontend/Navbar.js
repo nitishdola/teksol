@@ -1,11 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 export const Navbar = () => {
-
-    const handleClick = (e) => {
-        e.preventDefault();
-      };
-
   return (
     <nav className="navbar navbar-expand-lg">
         <Link className="navbar-brand overflow-hidden pr-3 header_logo" to="/">
@@ -27,7 +22,7 @@ export const Navbar = () => {
                     <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link onClick={handleClick}>Products and Services</Link>
+                    <Link to="JavaScript:void(0)">Products and Services</Link>
                     <ul className="dropdown fs--1">
                         <li><Link to="/microscope-and-microscopic-products">Microscopes and Microscopic Products</Link></li>
                         <li><Link to="/rotary-microtome">Rotary Microtome, Cryostat, Tissue Processors and other Histopathological Lab Instruments</Link></li>
