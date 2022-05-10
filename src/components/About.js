@@ -40,7 +40,7 @@ export const About = () => {
                 <br />4.  CID Biosystems, USA: Authorised Dealer for the products like Leaf Area Meters, Canopy Analysers, LEAF SPECTROMETER, Plant Root Scanning System (in-situ and off-situ) etc.
                 <br />5.  Qubit Systems, Canada: Soil Respiration Analysis Instrument
                 <br />6.  Apogee Instruments: Plant Chlorophyll Meter (SPAD), PAR Light Sensor Instruments etc.
-                <br />7.  LCGC RADWAG WEIGHING SOLUTIONS PVT. LTD. (Authorised Dealer for products like Weighing Balance, Moisture Analyser, Formulation Plants etc.)
+                <br />7.  LCGC TRUCAL and SERVICES for RADWAG, Poland make Weighing Balances and Weighing Solutions(Authorised Dealer for products like Weighing Balance, Moisture Analyser, Formulation Plants etc.)
                 
                 
                 <br />8. Sigma, Germany make Centrifuges, Refrigerated Centrifuges etc.
