@@ -44,11 +44,10 @@ export const About = () => {
                 
                 
                 <br />8. Sigma, Germany make Centrifuges, Refrigerated Centrifuges etc.
-                <br />9. Esco Micro Pte Ltd. Make CO2 Incubators, Biosafety Cabinets etc.
-                <br />10. Labogene, Denmakr make Freeze Dryers/Lyophilizers etc.
-                <br />11. D-Lab Scientific (Authorised Dealer for the range of products like Magnetic Stirrers, Hot Plates, Vortex Shakers, Various Orbital Shakers, Overhead Stirrers, Homogenizers, Heating Blocks, Rotary Evaporator etc.)
-                <br />12. Celfrost & Bluestar (Freezers, Deep Freezer etc., Cold Rooms, Cooling and Freezing Solution)
-                <br />13. Indian Manufacturers’ products like Plant Growth Chambers, Humidity Chambers, Heating and Cooling Instruments, Customized solutions for Heating, Cooling, Humidity and closed environment as per the customer’s needs, Hot Air Oven, Laminar Flow Cabinet, BOD Incubator, Shaking Incubator, Autoclaves etc.
+                
+                <br />9. D-Lab Scientific (Authorised Dealer for the range of products like Magnetic Stirrers, Hot Plates, Vortex Shakers, Various Orbital Shakers, Overhead Stirrers, Homogenizers, Heating Blocks, Rotary Evaporator etc.)
+                <br />10. Celfrost & Bluestar (Freezers, Deep Freezer etc., Cold Rooms, Cooling and Freezing Solution)
+                <br />11. Indian Manufacturers’ products like Plant Growth Chambers, Humidity Chambers, Heating and Cooling Instruments, Customized solutions for Heating, Cooling, Humidity and closed environment as per the customer’s needs, Hot Air Oven, Laminar Flow Cabinet, BOD Incubator, Shaking Incubator, Autoclaves etc.
 
                 </div>
             </div>
