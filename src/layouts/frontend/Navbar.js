@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 export const Navbar = () => {
 
-    handleClick = (e) => {
+    const handleClick = (e) => {
         e.preventDefault();
       };
 
