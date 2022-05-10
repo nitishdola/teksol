@@ -20,6 +20,8 @@ import { Slide9 } from "./components/products/Slide9";
 import { Service } from "./layouts/frontend/Service";
 import { AllProducts } from "./components/products/AllProducts";
 import { Contact } from "./layouts/frontend/Contact";
+import {NotFound} from './components/NotFound';
+
 function App() {
 
   var gallery_images = [
@@ -239,6 +241,11 @@ axios.interceptors.request.use(function(config) {
                     element={<AllProducts
                     />}
                   />  
+
+                <Route
+                  path='*'
+                  element={<NotFound />}
+                />
 
 
                 </Routes>
