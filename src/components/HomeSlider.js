@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export const HomeSlider = () => {
   return (
     <div className="flexslider flexslider-simple h-full loading">
@@ -17,7 +17,7 @@ export const HomeSlider = () => {
                                     <div className="overflow-hidden"><p className="slider-text-primary mt-4 mb-5 lh-2 fs-1 fs-md-2 zopacity" data-zanim='{"delay":0.1}'>Microscopes and Microscopic Products/Applications, Microscopic Imaging Solutions, Cameras & Image Analysis Software from one of the most reputed and admired manufacturer of the world, Leica Microsystems.</p></div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_1') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/microscope-and-microscopic-products">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                             
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_2') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/rotary-microtome">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -86,7 +86,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_3') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/rotary-microtome">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -119,7 +119,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_4') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/solution-for-plant-study">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -152,7 +152,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_5') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/general-lab-instruments">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -189,7 +189,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_6') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/products-for-microbiological-tissue-culture-laboratories">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -225,7 +225,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_7') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/products-and-solutions-for-freezer-dryer">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -261,7 +261,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_8') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/solutions-for-various-testing-and-measuring-instruments">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -296,7 +296,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="{{ route('sl_9') }}">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="/solutions-for-chemical-lab-chemical-analysis">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 
@@ -332,7 +332,7 @@ export const HomeSlider = () => {
                                     </div>
                                     <div className="overflow-hidden">
                                         <div className="zopacity" data-zanim='{"delay":0.2}'>
-                                            <a className="btn btn-primary mr-3 mt-3" href="#">More Details<span className="fa fa-chevron-right ml-2"></span></a>
+                                            <Link className="btn btn-primary mr-3 mt-3" to="#">More Details<span className="fa fa-chevron-right ml-2"></span></Link>
                                         </div>
                                     </div>
 

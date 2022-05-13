@@ -236,7 +236,7 @@ export const Home = (props) => {
                   <div className="overflow-hidden"><h4 className="color-white" data-zanim='{"delay":0}'>Request a call back</h4></div>
                   <div className="overflow-hidden">
                       <p className="px-lg-1 color-11 mb-0" data-zanim='{"delay":0.1}'>
-                          Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.
+                          Would you like to speak to one of our Technical Expert over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.
                       </p>
                   </div>
               </div>

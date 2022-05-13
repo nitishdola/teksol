@@ -310,3 +310,9 @@ img.gallery {
     box-shadow: 0 2.5em 0 0;
   }
 }
+
+.counter {
+  text-align: center;
+  background: #3d4c6f;
+  color: #F5F5F5;
+}

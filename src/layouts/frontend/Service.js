@@ -25,7 +25,7 @@ export const Service = () => {
                      persons in some areas of the region to provide an immediate solution for some of 
                      the common issues of our products.</p>
 
-                    <p>Please <Link to="/contact">contact us</Link> for your any service requirement of Lab Instruments</p>
+                    <p>Please call +91-7575918472 or <Link to="/contact">contact us</Link> for your any service requirement of Lab Instruments</p>
 
 
                 </div>

@@ -65,9 +65,7 @@ export const Footer = () => {
         <section className="background-primary text-center py-4">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-sm-3 text-sm-left">
-                        
-                    </div>
+                    
                     <div className="col-sm-6 mt-3 mt-sm-0">
                         <p className="color-white lh-6 mb-0 fw-600">&copy; Copyright Teksol Corporation</p>
                     </div>
