@@ -74,7 +74,7 @@ export const Contact = () => {
                 <h5 className="mb-3">Write to us</h5>
                 <form
                   onSubmit={submitContactForm}
-                  id="contactForm"
+                  id="contact_Form"
                 >
                   <div className="mb-4">
                     <input

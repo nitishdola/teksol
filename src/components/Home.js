@@ -243,7 +243,7 @@ export const Home = (props) => {
           </div>
           <div className="col-lg-8 pl-lg-5 mt-6 mt-lg-0">
               <h5 className="color-white">I would like to discuss:</h5>
-              <form className="zform mt-4" onSubmit={submitContactForm} id="contactForm">
+              <form className="zform mt-4" onSubmit={submitContactForm} id="homeContactForm">
                   <div className="row">
                       <div className="col-6">
                           
