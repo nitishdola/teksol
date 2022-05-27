@@ -1,14 +1,15 @@
 import React,{useState, useEffect} from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import { Spinner } from '../Spinner';
+import { Spinner } from '../Spinner'
 
 export const Slide1 = () => {
-
+    
     const [files, setFiles] = useState([]);
 
     useEffect(() => {
-      fetchAllFiles();
+        window.scrollTo(0, 0)
+        fetchAllFiles();
     }, []);
 
     const fetchAllFiles = () => {

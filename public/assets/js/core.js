@@ -218,24 +218,7 @@ if (
         });
 }
 $(document).ready(function () {
-    $(".zform").length &&
-        $(".zform").each(function () {
-            var a = $(this);
-            a.on("submit", function (e) {
-                e.preventDefault();
-                var t = a.find(":submit"),
-                    n = t.val();
-                t.val("Sending..."),
-                    $.ajax({
-                        type: "post",
-                        url: "assets/php/form-processor.php",
-                        data: $(this).serialize(),
-                        success: function (e) {
-                            a.find(".zform-feedback").html(e), t.val(n), a.trigger("reset");
-                        },
-                    });
-            });
-        });
+    
 }),
     $(document).ready(function () {
         $(".ui.dropdown").length && $(".ui.dropdown").dropdown(), $(".ui.accordion").length && $(".ui.accordion").accordion({ exclusive: !1 });

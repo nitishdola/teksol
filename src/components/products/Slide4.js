@@ -7,6 +7,7 @@ export const Slide4 = () => {
     const [files, setFiles] = useState([]);
 
     useEffect(() => {
+      window.scrollTo(0, 0)
       fetchAllFiles();
     }, []);
 

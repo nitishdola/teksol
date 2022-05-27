@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom';
 export const AllProducts = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section>
     <div className="container">

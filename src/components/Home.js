@@ -1,13 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import {HomeSlider} from './HomeSlider'
 import {Link} from 'react-router-dom'
 
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
-
+import { Spinner } from './Spinner';
 
 export const Home = (props) => {
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     const navigate = useNavigate();
 
@@ -21,6 +26,8 @@ export const Home = (props) => {
 
     });
 
+    const [loader, setLoader] = useState(false);
+
     const handleInput = (e) => {
         e.persist();
     
@@ -29,6 +36,7 @@ export const Home = (props) => {
 
     const submitContactForm = (e) => {
         e.preventDefault();
+        setLoader(true)
         console.log('Submit Form');
 
         const input_data = {
@@ -41,9 +49,12 @@ export const Home = (props) => {
 
         axios.post('/api/send-mail', input_data).then(res => {
             if(res.data.status === 200) {
+                setLoader(false)
               swal('Success', res.data.message, 'success');
               navigate('/');
             }else{
+                setLoader(false)
+                console.log(res.data.validation_errors);
               setMailInput({...mailInput, error_list:res.data.validation_errors})
             }
         });
@@ -56,6 +67,7 @@ export const Home = (props) => {
 <HomeSlider />
 
       <section className="background-white text-center">
+          
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-10 col-md-6">
@@ -242,6 +254,9 @@ export const Home = (props) => {
               </div>
           </div>
           <div className="col-lg-8 pl-lg-5 mt-6 mt-lg-0">
+
+          {loader == false ? ( 
+              <>
               <h5 className="color-white">I would like to discuss:</h5>
               <form className="zform mt-4" onSubmit={submitContactForm} id="homeContactForm">
                   <div className="row">
@@ -293,7 +308,12 @@ export const Home = (props) => {
                       <div className="col-6 mt-4"><button className="btn btn-warning btn-block" type="submit">Submit</button></div>
                       <div className="col-12"><div className="zform-feedback mt-4"></div></div>
                   </div>
-              </form>
+              </form></>
+         ) : ( 
+            <Spinner />
+        ) }
+
+              
           </div>
       </div>
   </div>

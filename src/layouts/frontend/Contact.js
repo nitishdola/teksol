@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
+import { Spinner } from '../../components/Spinner'
 export const Contact = () => {
 
     const navigate = useNavigate();
@@ -16,6 +17,8 @@ export const Contact = () => {
 
     });
 
+    const [loader, setLoader] = useState(false);
+
     const handleInput = (e) => {
         e.persist();
     
@@ -24,7 +27,7 @@ export const Contact = () => {
 
     const submitContactForm = (e) => {
         e.preventDefault();
-        console.log('Submit Form');
+        setLoader(true)
 
         const input_data = {
             name : mailInput.name,
@@ -35,7 +38,9 @@ export const Contact = () => {
         }
 
         axios.post('/api/send-mail', input_data).then(res => {
+          
             if(res.data.status === 200) {
+              setLoader(true)
               swal('Success', res.data.message, 'success');
               navigate('/');
             }else{
@@ -43,6 +48,10 @@ export const Contact = () => {
             }
         });
     }
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
 
     
   return (
@@ -72,7 +81,10 @@ export const Contact = () => {
             <div className="card">
               <div className="card-body h-100">
                 <h5 className="mb-3">Write to us</h5>
-                <form
+
+                {loader == false ? ( 
+                  <>                
+                  <form
                   onSubmit={submitContactForm}
                   id="contact_Form"
                 >
@@ -133,10 +145,12 @@ export const Contact = () => {
                       required="required"
                     ></textarea>
                   </div>
-                  <button className="btn btn-md-lg btn-primary" type="Submit">
+                  <button className="btn btn-md-lg btn-primary" type="submit">
                     <span className="color-white fw-600">Send Now</span>
                   </button>
                 </form>
+                </>
+                ) : ( <Spinner /> ) }
               </div>
             </div>
           </div>
