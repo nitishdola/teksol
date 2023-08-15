@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 export const Slide6 = () => {
 
     const [files, setFiles] = useState([]);
+    const REACT_APP_API_URL = "https://teksolcorporation.com/";
 
     useEffect(() => {
         window.scrollTo(0, 0)

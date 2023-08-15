@@ -6,6 +6,7 @@ import { Spinner } from '../Spinner';
 export const Slide9 = () => {
 
     const [files, setFiles] = useState([]);
+    const REACT_APP_API_URL = "https://teksolcorporation.com/";
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -48,7 +49,7 @@ export const Slide9 = () => {
                     <>
                     {files.map((file,index) => (
                         <p className="mt-3" key={index}> 
-                            <a target="_blank" href={process.env.REACT_APP_API_URL+ "assets/brochures/DLAB/" + file}>{file}</a>
+                            <a target="_blank" href={REACT_APP_API_URL+ "assets/brochures/DLAB/" + file}>{file}</a>
 
                         </p>
                     ))}
